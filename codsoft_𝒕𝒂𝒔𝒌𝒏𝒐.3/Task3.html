@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task3-Calculator</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Calculator with sound</h1>
+    
+        <input type="text" placeholder="0" id="inputbox" readonly>
+        <div>
+            <button id="Allclear" value="AC" onclick="playSound('all clean')" class="operator ac">AC</button>
+            <button id="delete" value="del" onclick="playSound('delete')" class="operator del">DEL</button>
+            <button id="buttonmodule" value="%" onclick="playSound('Per')" class="operator">%</button>
+            <button id="buttonDivide" value="/" onclick="playSound('divide')"class="operator">/</button>
+        </div>
+        <div>
+            <button id="button7"  class="button" value="7" onclick="playSound('Seven')">7</button>
+            <button id="button8" class="button" value="8" onclick="playSound('Eight')">8</button>
+            <button id="button9" class="button" value="9" onclick="playSound('Nine')">9</button>
+            <button id="buttonMultiply" value="*" class="operator" onclick="playSound('Multiple')">*</button>
+        </div>
+        <div>
+            <button id="button4" class="button" value="4" onclick="playSound('Four')">4</button>
+            <button id="button5" class="button" value="5" onclick="playSound('Five')">5</button>
+            <button id="button6" class="button" value="6" onclick="playSound('Six')">6</button>
+            <button id="buttonMinus" value="-" class="operator" onclick="playSound('Minus')">-</button>
+        </div>
+        <div>
+            <button id="button1" class="button" value="1" onclick="playSound('one')">1</button>
+            <button id="button2" class="button" value="2" onclick="playSound('two')">2</button>
+            <button id="button3" class="button" value="3" onclick="playSound('three')">3</button>
+            <button id="buttonPlus" value="+" class="operator" onclick="playSound('add')">+</button>
+        </div>
+        <div>
+            <button id="button0" class="button" value="0" onclick="playSound('DZero')">00</button>
+            <button id="button0" class="button" value="0" onclick="playSound('Zero')">0</button>
+            <button id="buttonDot" class="button" value="." onclick="playSound('Dot')">.</button>
+            <button id="buttonEqual" value="=" class="equalbtn" onclick="playSound('Equal')">=</button>
+        </div>
+    </div>
+    <script src="task3.js"></script>
+</body>
+</html>
